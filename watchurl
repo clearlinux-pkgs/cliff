@@ -1,0 +1,4 @@
+# openstack (Kilo stable) needs version <1.11.0
+# once they update requirement, we can push >=1.11.0 versions
+# check: https://github.com/openstack/requirements/blob/stable/kilo/global-requirements.txt
+watchurl=https://pypi.python.org/simple/cliff/ ../../packages/source/c/cliff/cliff-(1.10.[\d.]*).tar.gz.*
