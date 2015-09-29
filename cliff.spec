@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 1.15.0
-Release  : 15
+Release  : 16
 URL      : https://pypi.python.org/packages/source/c/cliff/cliff-1.15.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/cliff/cliff-1.15.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -13,6 +13,7 @@ License  : Apache-2.0
 Requires: cliff-python
 BuildRequires : PyYAML
 BuildRequires : cmd2
+BuildRequires : funcsigs-python
 BuildRequires : nose
 BuildRequires : pbr
 BuildRequires : pip
@@ -34,6 +35,7 @@ cliff -- Command Line Interface Formulation Framework
 %package python
 Summary: python components for the cliff package.
 Group: Default
+Requires: unicodecsv-python
 
 %description python
 python components for the cliff package.
