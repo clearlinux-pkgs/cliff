@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.0.0
-Release  : 21
+Release  : 22
 URL      : https://pypi.python.org/packages/source/c/cliff/cliff-2.0.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/c/cliff/cliff-2.0.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
