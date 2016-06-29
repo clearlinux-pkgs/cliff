@@ -1,6 +1,29 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Updated from global requirements
+* Update --max-width help
+* Add more test coverage for shell formatter
+* Add more test coverage for CSV formatter
+* Support multiple sub commands in completion
+* Factorize more test data
+* Factorize some test data
+* Factorize common test code
+* Factorize argparse importing
+* Updated from global requirements
+* Updated from global requirements
+* Add CLIFF_MAX_TERM_WIDTH envvar to complement --max-width
+* Fix prettytable.PrettyTable().max_width wrong usage
+* Fix AttributeError when entry point load failed
+* Distinguish no existed columns in ShowOne
+* Refactor HelpCommand
+* Updated from global requirements
+* Remove httplib2 from test-requirements.txt
+* Sync help message for --help
+
 2.0.0
 -----
 
