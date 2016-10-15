@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.1.0
-Release  : 24
+Release  : 25
 URL      : https://pypi.python.org/packages/ad/18/80beb6a034212522ec4fa5c1758cf1e8515959d0b26d8685c773c9a6ef7e/cliff-2.1.0.tar.gz
 Source0  : https://pypi.python.org/packages/ad/18/80beb6a034212522ec4fa5c1758cf1e8515959d0b26d8685c773c9a6ef7e/cliff-2.1.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -12,8 +12,8 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: cliff-python
 BuildRequires : PyYAML
+BuildRequires : cliff
 BuildRequires : cmd2
-BuildRequires : funcsigs-python
 BuildRequires : nose
 BuildRequires : pbr
 BuildRequires : pip
@@ -25,7 +25,6 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : stevedore
-BuildRequires : unicodecsv-python
 
 %description
 =======================================================
@@ -36,7 +35,6 @@ cliff -- Command Line Interface Formulation Framework
 Summary: python components for the cliff package.
 Group: Default
 Requires: stevedore
-Requires: unicodecsv-python
 
 %description python
 python components for the cliff package.
@@ -46,6 +44,7 @@ python components for the cliff package.
 %setup -q -n cliff-2.1.0
 
 %build
+export LANG=C
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
