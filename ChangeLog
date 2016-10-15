@@ -1,6 +1,21 @@
 CHANGES
 =======
 
+2.2.0
+-----
+
+* Avoid ASCII encoding errors when output is redirected
+* Fix cliff URLs in doc and demoapp
+* Remove announce.rst
+* Fix Command class doc typo
+* Updated from global requirements
+* Fixed broken link
+* add formattable columns concept
+* Add tests, cover more cases
+* Updated from global requirements
+* pep8: fix F405 error
+* command: make run() return take_action() value
+
 2.1.0
 -----
 
