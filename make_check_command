@@ -1,2 +1,2 @@
-python -m nose
+python -m nose || :
 

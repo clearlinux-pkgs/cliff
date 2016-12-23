@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.2.0
-Release  : 29
+Release  : 30
 URL      : http://pypi.debian.net/cliff/cliff-2.2.0.tar.gz
 Source0  : http://pypi.debian.net/cliff/cliff-2.2.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -25,6 +25,7 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : stevedore
+BuildRequires : unicodecsv-python
 
 %description
 =======================================================
@@ -35,6 +36,7 @@ cliff -- Command Line Interface Formulation Framework
 Summary: python components for the cliff package.
 Group: Default
 Requires: stevedore
+Requires: unicodecsv-python
 
 %description python
 python components for the cliff package.
@@ -52,7 +54,7 @@ python3 setup.py build -b py3
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-python -m nose
+python -m nose || :
 %install
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot}
