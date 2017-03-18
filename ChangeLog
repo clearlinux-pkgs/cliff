@@ -1,6 +1,37 @@
 CHANGES
 =======
 
+2.4.0
+-----
+
+* Remove tox environments that no longer work
+* Fix command order
+* Show team and repo badges on README
+* Add print_empty parameter
+
+2.3.0
+-----
+
+* ignore Command docstring when looking for descriptions
+* let the Command get its one-liner description from a class attribute
+* flake8 fix
+* Replace dashes and colons when using bash formatter
+* Show entire command in error message
+* Updated from global requirements
+* Updated from global requirements
+* Fix spelling mistake
+* Add Python 3.5 classifier and venv
+* Updated from global requirements
+* Changed the home-page link
+* Add Apache 2.0 license to source file
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Clean imports in code
+* [doc]Fix URL for 'setuptools entry points'
+* Fix a typo in comment
+
 2.2.0
 -----
 
