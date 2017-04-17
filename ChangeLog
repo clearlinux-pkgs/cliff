@@ -1,9 +1,22 @@
 CHANGES
 =======
 
+2.5.0
+-----
+
+* Use Sphinx 1.5 warning-is-error
+* Update cmd2 fix to still work with 0.6.7
+* Remove support for py34
+* Fix broken test with cmd2 0.7.0
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Add newline if the output formatter is json
+
 2.4.0
 -----
 
+* Add Constraints support
 * Remove tox environments that no longer work
 * Fix command order
 * Show team and repo badges on README
