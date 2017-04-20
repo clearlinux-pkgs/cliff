@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+2.6.0
+-----
+
+* Updated from global requirements
+* Add support for epilogs
+* Add 'autoprogram-cliff' Sphinx directive
+* .gitignore: Ignore eggs
+
 2.5.0
 -----
 
