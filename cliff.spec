@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.6.0
-Release  : 35
+Release  : 36
 URL      : https://pypi.debian.net/cliff/cliff-2.6.0.tar.gz
 Source0  : https://pypi.debian.net/cliff/cliff-2.6.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
