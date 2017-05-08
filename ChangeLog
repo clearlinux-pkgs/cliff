@@ -1,10 +1,16 @@
 CHANGES
 =======
 
+2.7.0
+-----
+
+* covert test suite to use testrepository
+
 2.6.0
 -----
 
 * Updated from global requirements
+* Add smart help formatter for command parser
 * Add support for epilogs
 * Add 'autoprogram-cliff' Sphinx directive
 * .gitignore: Ignore eggs
@@ -28,7 +34,7 @@ CHANGES
 * Remove tox environments that no longer work
 * Fix command order
 * Show team and repo badges on README
-* Add print_empty parameter
+* Add print\_empty parameter
 
 2.3.0
 -----
@@ -66,7 +72,7 @@ CHANGES
 * Add tests, cover more cases
 * Updated from global requirements
 * pep8: fix F405 error
-* command: make run() return take_action() value
+* command: make run() return take\_action() value
 
 2.1.0
 -----
@@ -82,8 +88,8 @@ CHANGES
 * Factorize argparse importing
 * Updated from global requirements
 * Updated from global requirements
-* Add CLIFF_MAX_TERM_WIDTH envvar to complement --max-width
-* Fix prettytable.PrettyTable().max_width wrong usage
+* Add CLIFF\_MAX\_TERM\_WIDTH envvar to complement --max-width
+* Fix prettytable.PrettyTable().max\_width wrong usage
 * Fix AttributeError when entry point load failed
 * Distinguish no existed columns in ShowOne
 * Refactor HelpCommand
@@ -101,14 +107,14 @@ CHANGES
 
 * Drop Python 2.6 support
 * Revert "app,command: disallow abbrev by default"
-* Fixes terminal_width on Windows
+* Fixes terminal\_width on Windows
 
 1.16.0
 ------
 
 * Updated from global requirements
 * remove openstack-common.conf
-* Add doc for deferred_help parameter
+* Add doc for deferred\_help parameter
 * Fix pep8 failure
 * app,command: disallow abbrev by default
 * app: work-around abbrev
@@ -146,7 +152,7 @@ CHANGES
 * Remove requirements.txt from tox.ini
 * Updated from global requirements
 * Updated from global requirements
-* Allow subcommands to accept --help when using 'deferred_help'
+* Allow subcommands to accept --help when using 'deferred\_help'
 * Updated from global requirements
 * Fix logging config in demo app
 * Use base command for help test
@@ -161,7 +167,7 @@ CHANGES
 * Add some docs for list value formatter
 * Add value format for list command
 * Updated from global requirements
-* Remove run_cross_tests.sh
+* Remove run\_cross\_tests.sh
 * fix author contact details
 * Print help on help command
 
@@ -185,15 +191,15 @@ CHANGES
 ------
 
 * Pass user command text to the Command object
-* Document print_help_if_requested method
+* Document print\_help\_if\_requested method
 
 1.10.0
 ------
 
-* Allow to call initialize_app when running --help
+* Allow to call initialize\_app when running --help
 * Hide prompt in batch/pipe mode
 * Correct completion in interactive mode
-* Change the argument passed to __init__ for help
+* Change the argument passed to \_\_init\_\_ for help
 * Fix pep8 tests for lambda
 * Updated from global requirements
 * Fix git repo urls in tox.ini
@@ -215,7 +221,7 @@ CHANGES
 * Add more detail to the README
 * Updated from global requirements
 * Add docs environment to tox.ini
-* mock.assert_called_once() is not a valid method
+* mock.assert\_called\_once() is not a valid method
 * Work toward Python 3.4 support and testing
 * warn against sorting requirements
 
@@ -230,11 +236,11 @@ CHANGES
 * Set the main logger name to match the application
 * CSV formatter should use system-dependent line ending
 * Make show option compatible with Python 2.6
-* Use six.add_metaclass instead of __metaclass__
+* Use six.add\_metaclass instead of \_\_metaclass\_\_
 * fixed typos found by RETF rules
 * The --variable option to shell format is redundant
-* Expose load_commands publicly
-* Fix wrong method name assert_called_once
+* Expose load\_commands publicly
+* Fix wrong method name assert\_called\_once
 * Updated from global requirements
 * Fix pep8 failures on rule E265
 
@@ -243,7 +249,7 @@ CHANGES
 
 * Remove PrettyTable from documentation requirements
 * Fix a bug in ShellFormatter's escaping of double quotes in strings
-* Import run_cross_tests.sh from oslo-incubator
+* Import run\_cross\_tests.sh from oslo-incubator
 * add doc requirements to venv
 
 1.6.0
@@ -358,7 +364,7 @@ CHANGES
 * add style checks to tests
 * Add tests for underscore handling
 * use flake8 for style checks
-* update history.rst with convert_underscores change
+* update history.rst with convert\_underscores change
 * make converting underscores optional in CommandManager
 * fix version in docs
 
@@ -380,7 +386,7 @@ CHANGES
 * fix rst formatting in docstring
 * Update history file
 * Add tests for new functionality
-* Allow user to pass argparse_kwargs argument to the build_option_parser method. Those arguments gets passed to the ArgumentParser constructor
+* Allow user to pass argparse\_kwargs argument to the build\_option\_parser method. Those arguments gets passed to the ArgumentParser constructor
 
 1.2.1
 -----
@@ -425,9 +431,9 @@ CHANGES
 * merge API refactoring work
 * yet more pep8 work
 * fix help and tests for API change
-* Move take_action() to Command
+* Move take\_action() to Command
 * more pep8 work
-* Refactor DisplayBase.run() to make it easier to override separate parts in subclasses. Rename get_data() to take_action() so subclasses that do something other than query for values have a clear place to override
+* Refactor DisplayBase.run() to make it easier to override separate parts in subclasses. Rename get\_data() to take\_action() so subclasses that do something other than query for values have a clear place to override
 * pep8 cleanup
 * add attribution to history for the previous merge
 * Adding new line to tablib formatters
@@ -454,7 +460,7 @@ CHANGES
 ---
 
 * bump version number
-* pass more details to initialize_app so subclasses can decide what sort of initialization to do
+* pass more details to initialize\_app so subclasses can decide what sort of initialization to do
 * enable to use in Python2.6
 
 0.5.1
@@ -489,7 +495,7 @@ CHANGES
 * 100% coverage for commandmanager.py
 * 100% coverage of cliff.app module
 * let the interactive app set its own prompt
-* add tests for App and fix an issue with error handling and clean_up() in python 3
+* add tests for App and fix an issue with error handling and clean\_up() in python 3
 * use the stderr handle given to the app instead of assuming the default
 
 0.4
@@ -537,7 +543,7 @@ CHANGES
 * add example output to the list formatters
 * add a requirements file for doc build on readthedocs.org
 * add some real documentation
-* Add get_data() to the Lister base class
+* Add get\_data() to the Lister base class
 * remove example that I was using as a syntax reminder
 * Add a link to the docs
 * while looking for documentation on entry points I realized distutils2 doesn't seem to support them in the same way
@@ -581,7 +587,7 @@ CHANGES
 * start building command manager
 * change to apache license
 * add tox config file for tests
-* add distribute_setup.py so install works
+* add distribute\_setup.py so install works
 * add setup.py and package directory
 * add a basic description to readme
 * convert readme to rst
