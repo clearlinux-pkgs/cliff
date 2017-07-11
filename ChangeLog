@@ -1,6 +1,33 @@
 CHANGES
 =======
 
+2.8.0
+-----
+
+* add tests for display command classes and hooks
+* Run hooks for DisplayCommandBase
+* add --fit-width option to table formatter
+* sphinxext: Add 'application' option to the autoprogram directive
+* use openstackdocstheme html context
+* switch from oslosphinx to openstackdocstheme
+* Fix erroneous line in command hook test
+* make smart help formatter test deterministic
+* remove references to distribute in the docs
+* add before and after hooks
+* add hook for get\_epilog
+* add hook for manipulating the argument parser
+* Updated from global requirements
+* pass the command name from HelpCommand
+* Adjust completenames tests for cmd2 0.7.3+
+* rearrange existing content to follow new standard
+* sphinext: Use metavar where possible
+* sphinxext: Use 'argparse.description', 'argparse.epilog'
+* sphinxext: Allow configuration of ignorable options
+* sphinxext: Generate better usage examples
+* add cmd\_name argument to CompleteCommand
+* Ensure python standard argparse module is loaded
+* Updated from global requirements
+
 2.7.0
 -----
 
