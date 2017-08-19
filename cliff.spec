@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.8.0
-Release  : 39
+Release  : 40
 URL      : https://pypi.debian.net/cliff/cliff-2.8.0.tar.gz
 Source0  : https://pypi.debian.net/cliff/cliff-2.8.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -27,6 +27,7 @@ BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
+BuildRequires : typing-python
 
 %description
 Team and repository tags
@@ -48,12 +49,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1503073880
+export SOURCE_DATE_EPOCH=1503153259
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1503073880
+export SOURCE_DATE_EPOCH=1503153259
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
