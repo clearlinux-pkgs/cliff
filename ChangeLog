@@ -1,6 +1,90 @@
 CHANGES
 =======
 
+2.13.0
+------
+
+* Assure executable name is kept when app is called as module
+
+2.12.1
+------
+
+* Build universal wheels
+* fix tox python3 overrides
+* support cmd2 0.9.1 in interactive mode
+
+2.12.0
+------
+
+* update cmd2 dependency to handle py3 only versions
+* Remove travis.yml
+* exclude cmd2 0.8.3 and update to 0.8.4
+* add lower-constraints job
+* fix typos in documentation
+* Updated from global requirements
+* Remove the warning of getargspec removal
+* Align parsed() call with cmd2 versions >= 0.7.3
+* Fix cmd2 doc URL
+* sphinxext: Warn if namespace or command pattern invalid
+* Zuul: Remove project name
+* Updated from global requirements
+
+2.11.0
+------
+
+* remove -s alias for --sort-columns
+
+2.10.0
+------
+
+* Remove empty files
+* Add ability to sort data by columns for list commands
+* Updated from global requirements
+* Remove tox\_install.sh and just pass -c in tox
+* Replace legacy tips jobs with shiny new versions
+* Move doc requirements to doc/requirements.txt
+* do not require installing demo app to build docs
+* add support for legacy command name translation
+* Use in-tree cliffdemo app for docs build
+* Updated from global requirements
+* add bandit to pep8 job
+* sphinxext: Support cliff application
+* Fix PEP8 in gate
+* doc: Cleanup of demoapp doc
+* Generate demoapp CLI refernece
+* Fix codec error when format=csv
+
+2.9.1
+-----
+
+* handle more varied top\_level.txt files in distributions
+
+2.9.0
+-----
+
+* show the distribution providing the command in help output
+* Update .gitignore
+* Docs update for more-hooks
+* Updates for stestr
+* Allow command hooks to make changes
+* Updated from global requirements
+* add actual column names to error msg Closes-Bug: 1712876
+* Alias exit to cmd2's quit command to exit interactive shell
+* Updated from global requirements
+* Update doc on Sphinx integration process
+* Fix regexp for detecting long options
+* sphinxext: Correct issues with usage formatting
+* Move comments up in [extras] section of setup.cfg
+* Updated from global requirements
+* Make openstackdocstheme an optional doc dependency
+* Updated from global requirements
+* doc: minor cleanup
+* Update and replace http with https for doc links
+* doc: Remove blank lines between term and definition
+* trivial: Fix comments in sphinxext module
+* Use assertIsNone(...) instead of assertIs(None,...)
+* Updated from global requirements
+
 2.8.0
 -----
 
