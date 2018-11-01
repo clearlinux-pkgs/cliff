@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+2.14.0
+------
+
+* Don't try to run issubclass on non-classes
+* Removed unused err variable
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+
 2.13.0
 ------
 
