@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.14.0
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/90/2a/232a69a1f1fe3bdf9a05fd4ec6072c44b63849771d10b6f21a6be701c943/cliff-2.14.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/90/2a/232a69a1f1fe3bdf9a05fd4ec6072c44b63849771d10b6f21a6be701c943/cliff-2.14.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541092165
+export SOURCE_DATE_EPOCH=1541264911
 python3 setup.py build
 
 %install
