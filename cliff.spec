@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.14.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/90/2a/232a69a1f1fe3bdf9a05fd4ec6072c44b63849771d10b6f21a6be701c943/cliff-2.14.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/90/2a/232a69a1f1fe3bdf9a05fd4ec6072c44b63849771d10b6f21a6be701c943/cliff-2.14.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -14,10 +14,8 @@ Requires: cliff-license = %{version}-%{release}
 Requires: cliff-python = %{version}-%{release}
 Requires: cliff-python3 = %{version}-%{release}
 Requires: PyYAML
-Requires: Sphinx
 Requires: cliff
 Requires: cmd2
-Requires: openstackdocstheme
 Requires: pbr
 Requires: pyparsing
 Requires: six
@@ -28,8 +26,11 @@ BuildRequires : cliff
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/cliff.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the cliff package.
@@ -65,7 +66,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541265811
+export SOURCE_DATE_EPOCH=1551029546
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
