@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.15.0
-Release  : 53
+Release  : 54
 URL      : https://files.pythonhosted.org/packages/bb/3d/225750bee763d6f15edddf9fad8119e2e90a34a1941ca56ed069c9196e47/cliff-2.15.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bb/3d/225750bee763d6f15edddf9fad8119e2e90a34a1941ca56ed069c9196e47/cliff-2.15.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
