@@ -1,6 +1,10 @@
 # This file contains recursive sources that require this package
 barbican
 cliff
+osc-lib
+python-designateclient
 python-mistralclient
+python-neutronclient
+python-openstackclient
 stestr
 tempest
