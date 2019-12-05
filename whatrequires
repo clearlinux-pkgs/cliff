@@ -2,6 +2,7 @@
 barbican
 cliff
 osc-lib
+python-barbicanclient
 python-designateclient
 python-mistralclient
 python-neutronclient

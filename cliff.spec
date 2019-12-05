@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 2.16.0
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/3d/78/40a180430ff54afabe613f16d8f2658a24b1675c45dd806620511219af89/cliff-2.16.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3d/78/40a180430ff54afabe613f16d8f2658a24b1675c45dd806620511219af89/cliff-2.16.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -30,13 +30,11 @@ BuildRequires : pyparsing
 BuildRequires : six
 BuildRequires : stevedore
 BuildRequires : unicodecsv
+Patch1: 0001-Drop-strict-version-requirements-for-cmd2.patch
 
 %description
-========================
 Team and repository tags
-========================
-.. image:: https://governance.openstack.org/tc/badges/cliff.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+        ========================
 
 %package license
 Summary: license components for the cliff package.
@@ -66,14 +64,15 @@ python3 components for the cliff package.
 
 %prep
 %setup -q -n cliff-2.16.0
+cd %{_builddir}/cliff-2.16.0
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1567873933
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1575576021
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -89,7 +88,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/cliff
-cp LICENSE %{buildroot}/usr/share/package-licenses/cliff/LICENSE
+cp %{_builddir}/cliff-2.16.0/LICENSE %{buildroot}/usr/share/package-licenses/cliff/2b8b815229aa8a61e483fb4ba0588b8b6c491890
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -100,7 +99,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/cliff/LICENSE
+/usr/share/package-licenses/cliff/2b8b815229aa8a61e483fb4ba0588b8b6c491890
 
 %files python
 %defattr(-,root,root,-)
