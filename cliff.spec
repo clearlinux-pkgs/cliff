@@ -4,7 +4,7 @@
 #
 Name     : cliff
 Version  : 3.0.0
-Release  : 60
+Release  : 61
 URL      : https://files.pythonhosted.org/packages/17/7f/0704826112e089d4e7d188818b825b7e16810749228cf92be12558d71c4c/cliff-3.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/17/7f/0704826112e089d4e7d188818b825b7e16810749228cf92be12558d71c4c/cliff-3.0.0.tar.gz
 Summary  : Command Line Interface Formulation Framework
@@ -34,8 +34,27 @@ Patch1: 0001-Drop-strict-version-requirements-for-cmd2.patch
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/cliff.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+=======================================================
+ cliff -- Command Line Interface Formulation Framework
+=======================================================
+
+cliff is a framework for building command line programs. It uses
+`setuptools entry points`_ to provide subcommands, output formatters, and
+other extensions.
+
+.. _setuptools entry points: http://setuptools.readthedocs.io/en/latest/pkg_resources.html#convenience-api
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/cliff/latest/
+* Source: https://opendev.org/openstack/cliff
+* Bugs: https://bugs.launchpad.net/python-cliff
+* Contributors: https://github.com/openstack/cliff/graphs/contributors
 
 %package license
 Summary: license components for the cliff package.
@@ -58,6 +77,7 @@ python components for the cliff package.
 Summary: python3 components for the cliff package.
 Group: Default
 Requires: python3-core
+Provides: pypi(cliff)
 
 %description python3
 python3 components for the cliff package.
@@ -73,7 +93,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582585880
+export SOURCE_DATE_EPOCH=1582907889
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
