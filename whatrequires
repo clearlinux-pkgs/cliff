@@ -1,9 +1,10 @@
 # This file contains recursive sources that require this package
-barbican
 cliff
+gnocchiclient
 osc-lib
 python-barbicanclient
 python-designateclient
+python-heatclient
 python-mistralclient
 python-neutronclient
 python-openstackclient
