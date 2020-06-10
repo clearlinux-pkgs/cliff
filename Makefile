@@ -1,5 +1,5 @@
 PKG_NAME := cliff
-URL = https://files.pythonhosted.org/packages/21/4e/0edfaf74a40cffe66de8ae8b9704420696ed37238dd57ce0935c9a341077/cliff-3.1.0.tar.gz
+URL = https://files.pythonhosted.org/packages/25/3e/d970b4fc5a88a61014c96be4c2a446c6a228833fc1e97bc9e236deb59560/cliff-3.2.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
